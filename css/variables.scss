@@ -1,0 +1,39 @@
+$blue:              #08a7f8;
+$blue-text:         #08b1f8;
+
+$acid-blue:         #0072ff;
+$acid-blue2:        #0885f8;
+$acid-blue3:        #0ba6e8;
+
+$light-acid-blue:   #00c6ff;
+$light-blue:        #e6f7fe;
+
+$dark-blue:         #364553;
+$dark-gray:         #2f2f30;
+
+$gray:              #8a9ba8;
+$gray-2:            #606470;
+$gray-3:            #838b9a;
+
+$gray-light:        #ced9e0;
+$beige:             #d9d9d9;
+
+
+$red:                #e85656;
+$crystal-red:        rgba(237, 88, 86, 0.1);
+$light-red:          #eed5ce;
+$pink:               #ff3a56;
+
+
+
+$fontBase: 16px;
+
+$grid-breakpoints: (
+        xs: 0,
+        sm: 576px,
+        md: 768px,
+        lg: 992px,
+        xl: 1200px
+) !default;
+
+

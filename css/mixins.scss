@@ -1,0 +1,105 @@
+@function _length($number, $unit) {
+  $strings: 'px' 'cm' 'mm' '%' 'ch' 'pica' 'in' 'em' 'rem' 'pt' 'pc' 'ex' 'vw'
+  'vh' 'vmin' 'vmax';
+  $units: 1px 1cm 1mm 1% 1ch 1pica 1in 1em 1rem 1pt 1pc 1ex 1vw 1vh 1vmin 1vmax;
+  $index: index($strings, $unit);
+
+  @if not $index {
+    @warn "Unknown unit `#{$unit}`.";
+    @return false;
+  }
+
+  @return $number * nth($units, $index);
+}
+
+@function px-to-rem($size) {
+  @return _length($size/$fontBase,"rem");
+}
+
+@function font-to-rem($size) {
+  @return _length($size/$fontBase,"rem");
+}
+
+@mixin link-color ($color, $hover, $active) {
+  a {
+    color: $color;
+    &:hover {
+      color: $hover;
+    }
+    &:active {
+      color: $active;
+    }
+  }
+}
+
+@mixin link-block ($display: block, $color: white, $hover: white, $active: white) {
+  display: $display;
+  color: $color;
+  border: none;
+  text-decoration: none;
+  &:hover {
+    color:$hover;
+    text-decoration: none;
+  }
+  &:active {
+    color: $active;
+  }
+  &:focus {
+    outline: none;
+  }
+}
+
+@mixin link-inline-block ($display: inline-block, $color: white, $hover: white, $active: white) {
+  display: $display;
+  color: $color;
+  border: none;
+  text-decoration: none;
+  &:hover {
+    color:$hover;
+    text-decoration: none;
+  }
+  &:active {
+    color: $active;
+  }
+  &:focus {
+    outline: none;
+  }
+}
+
+@mixin clearfix() {
+  &:before,
+  &:after {
+    content: "";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+@mixin pseudo($display: block, $pos: absolute, $content: ''){
+  content: $content;
+  display: $display;
+  position: $pos;
+}
+
+@mixin border-radius($radius: 10px) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+}
+
+@mixin border($border-width: 1px, $border-style: solid, $border-color: $light-red ) {
+  border: $border-width $border-style $border-color;
+}
+
+@mixin placeholder-color($color) {
+  &.placeholder { color: $color; }
+  &:-moz-placeholder {color: $color; }
+  &::-moz-placeholder { color: $color; }
+  &:-ms-input-placeholder { color: $color; }
+  &::-webkit-input-placeholder { color: $color; }
+}

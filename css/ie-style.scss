@@ -1,0 +1,291 @@
+@supports (-ms-ime-align:auto) {
+  .button {
+    &_side_right,
+    &_side_left {
+      border-radius: px-to-rem(10px);
+      padding-bottom: px-to-rem(19px);
+    }
+  }
+  .cost {
+    &_child .cost__svg_bottom {
+      bottom: px-to-rem(-375px);
+    }
+    &_adult .cost__svg_bottom {
+      bottom: px-to-rem(-408px);
+    }
+  }
+}
+
+_:-ms-fullscreen, :root {
+  & .button {
+    &_side_right,
+    &_side_left {
+      border-radius: px-to-rem(10px);
+      padding-bottom: px-to-rem(19px);
+    }
+  }
+  & .main-banner {
+    z-index: 0;
+    &__svg {
+      top: px-to-rem(370px);
+      z-index: -1;
+    }
+    &__image-wrap {
+      z-index: -2;
+    }
+  }
+  & .advantage {
+    &__head.h3 {
+      line-height: 1.2;
+    }
+    &__svg {
+      display: none;
+    }
+    &_adult {
+      & .advantage__wrap {
+        &:before {
+          width: 61%;
+          left: px-to-rem(-250px);
+        }
+      }
+    }
+  }
+  & .cost {
+    &_child {
+      & .cost__svg {
+        &_top {
+          top: px-to-rem(-875px);
+        }
+        &_bottom {
+          bottom: px-to-rem(-614px);
+        }
+      }
+    }
+    &_adult {
+      & .cost__svg {
+        &_top {
+          top: px-to-rem(-860px);
+        }
+        &_bottom {
+          bottom: px-to-rem(-624px);
+        }
+      }
+    }
+  }
+  & .rent {
+    background-position-y: px-to-rem(650px);
+    &__svg {
+      &_top {
+        top: px-to-rem(-413px);
+      }
+      &_bottom {
+        bottom: px-to-rem(-450px);
+      }
+    }
+  }
+
+  & .footer {
+    &__svg {
+      top: auto;
+      bottom: px-to-rem(180px);
+    }
+  }
+}
+
+
+
+@media (max-width: 1830px) {
+  _:-ms-fullscreen, :root {
+    & .cost {
+      &_child,
+      &_adult {
+        & .cost__svg {
+          &_top {
+            top: px-to-rem(-960px);
+          }
+          &_bottom {
+            bottom: px-to-rem(-660px);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1700px) {
+  _:-ms-fullscreen, :root {
+    & .rent {
+      &__svg {
+        &_top {
+          top: px-to-rem(-430px);
+        }
+        &_bottom {
+          bottom: px-to-rem(-466px);
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1565px) {
+  _:-ms-fullscreen, :root {
+    & .main-banner {
+      z-index: 0;
+      &__svg {
+        top: px-to-rem(390px);
+      }
+    }
+  }
+}
+
+@media (max-width: 1500px) {
+  _:-ms-fullscreen, :root {
+    & .cost {
+      &_child,
+      &_adult {
+        & .cost__svg {
+          &_top {
+            top: px-to-rem(-1040px);
+          }
+          &_bottom {
+            bottom: px-to-rem(-708px);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1327px) {
+  _:-ms-fullscreen, :root {
+    & .main-banner {
+      z-index: 0;
+      &__svg {
+        top: px-to-rem(400px);
+      }
+    }
+    & .header {
+      &__wrap {
+        width: 95%;
+      }
+    }
+  }
+}
+
+
+@include media-breakpoint-down(lg) {
+  @supports (-ms-ime-align:auto) {
+    .cost {
+      &_child,
+      &_adult {
+        & .cost__svg_bottom {
+          bottom: px-to-rem(-210px);
+        }
+      }
+    }
+  }
+
+  _:-ms-fullscreen, :root {
+    & .main-banner {
+      &__svg {
+        top: px-to-rem(286px);
+      }
+    }
+    & .cost {
+      background-image: linear-gradient(to bottom, #0885f8 9%, #00b1fd);
+      margin-bottom: px-to-rem(55px);
+      &:before {
+        content: none;
+      }
+      &__svg {
+        display: none;
+      }
+    }
+    & .rent {
+      background-position-y: px-to-rem(380px);
+      padding-top: px-to-rem(100px);
+      &__img {
+        bottom: 0;
+      }
+      &__svg {
+        &_top {
+          display: none;
+        }
+        &_bottom {
+          display: none;
+        }
+      }
+    }
+    & .footer {
+      &__svg {
+        bottom: px-to-rem(185px);
+      }
+    }
+  }
+}
+
+@include media-breakpoint-down(md) {
+  _:-ms-fullscreen, :root {
+    & .main-banner {
+      &__svg {
+        top: px-to-rem(298px);
+      }
+    }
+
+    & .footer {
+      &__svg {
+        bottom: px-to-rem(205px);
+      }
+    }
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  _:-ms-fullscreen, :root {
+    & .main-banner {
+      margin-bottom: px-to-rem(60px);
+      padding-bottom: px-to-rem(30px);
+      &__svg {
+       display: none;
+      }
+    }
+    & .rent {
+      background-position-y: px-to-rem(240px);
+    }
+    & .advantage {
+      &_child,
+      &_adult {
+        & .advantage {
+          &__text {
+            &:before {
+              content: none;
+            }
+          }
+          &__wrap {
+            &:before {
+              content: none;
+            }
+          }
+          &__img {
+            display: none;
+          }
+        }
+      }
+    }
+    & .footer {
+      &__svg {
+        bottom: px-to-rem(195px);
+      }
+    }
+  }
+}
+
+@include media-breakpoint-down(xs) {
+  _:-ms-fullscreen, :root {
+    & .footer {
+      &__svg {
+        bottom: px-to-rem(204px);
+      }
+    }
+  }
+}

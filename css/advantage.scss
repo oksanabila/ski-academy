@@ -1,0 +1,315 @@
+.advantage {
+  $parent: &;
+  position: relative;
+  margin-bottom: px-to-rem(200px);
+  &__svg {
+    position: absolute;
+    top: px-to-rem(-440px);
+    width: 70%;
+    height: auto;
+    z-index: -1;
+  }
+  &__wrap {
+    @include border-radius();
+    @include border();
+    padding: px-to-rem(65px);
+    margin-bottom: px-to-rem(40px);
+    position: relative;
+    overflow: hidden;
+    background-color: white;
+    &:before {
+      @include pseudo();
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+  &__text {
+    margin-bottom: px-to-rem(64px);
+  }
+  &__head {
+    margin-bottom: px-to-rem(55px);
+  }
+  &__head-small{
+    display: block;
+  }
+  &__img {
+    position: absolute;
+  }
+  &_child {
+    #{$parent}__svg {
+      right: 0;
+    }
+    #{$parent}__head {
+      color: $blue-text;
+      margin-right: 35%;
+    }
+    #{$parent}__head-small {
+      color: $red;
+      text-align: left;
+    }
+    #{$parent}__wrap {
+      &:before {
+        height: 117%;
+        width: 50%;
+        right: 0;
+        bottom: px-to-rem(75px);
+        background-image: url("../img/snow-back.png");
+      }
+    }
+    #{$parent}__text {
+      float: left;
+      &:before {
+        content: "";
+        float: right;
+        shape-outside: ellipse(55px 130px at 50% 45%);
+        width: px-to-rem(100px);
+        height: px-to-rem(240px);
+      }
+    }
+    #{$parent}__img {
+      top: px-to-rem(133px);
+      right: px-to-rem(104px);
+      width: 35%;
+    }
+  }
+  &_adult {
+    #{$parent}__svg {
+      left: 0;
+      transform: scale(-1, 1);
+      width: 60%;
+      top: px-to-rem(-312px);
+    }
+    #{$parent}__head {
+      color: $red;
+      margin-left: px-to-rem(248px);
+      text-align: left;
+    }
+    #{$parent}__head-small {
+      color: $blue-text;
+      margin-left: px-to-rem(115px);
+    }
+    #{$parent}__wrap {
+      &:before {
+        height: 108%;
+        width: 50%;
+        left: px-to-rem(-100px);
+        bottom: px-to-rem(69px);
+        background-image: url("../img/descent-bg-sm.png");
+        background-position-x: px-to-rem(-370px);
+      }
+    }
+    #{$parent}__img {
+      top: px-to-rem(110px);
+      left: px-to-rem(-197px);
+      width: 47%;
+    }
+  }
+}
+
+@include media-breakpoint-down(lg) {
+  .advantage {
+    $parent: &;
+    & svg {
+      width: 95%;
+    }
+    &_child {
+      #{$parent}__svg {
+        top: px-to-rem(-19px);
+      }
+      #{$parent}__text {
+        &:before {
+          width: px-to-rem(80px);
+        }
+      }
+      #{$parent}__head {
+        margin-right: 0;
+      }
+      #{$parent}__wrap {
+        &:before {
+          height: 100%;
+          right: 0;
+          bottom: px-to-rem(106px);
+        }
+      }
+      #{$parent}__img {
+        top: px-to-rem(254px);
+        right: px-to-rem(15px);
+      }
+    }
+    &_adult {
+      #{$parent}__svg {
+        top: px-to-rem(-30px);
+      }
+      #{$parent}__wrap {
+        &:before {
+          width: 100%;
+          height: 100%;
+          left: px-to-rem(-160px);
+          background-size: contain;
+        }
+      }
+      #{$parent}__head {
+        margin-left: px-to-rem(88px);
+      }
+      #{$parent}__img {
+        top: px-to-rem(193px);
+        left: px-to-rem(-159px);
+      }
+    }
+  }
+}
+
+@include media-breakpoint-down(md) {
+  .advantage {
+    $parent: &;
+    &__wrap {
+      padding: px-to-rem(35px);
+    }
+    &_child {
+      #{$parent}__svg {
+        height: px-to-rem(826px);
+        top: px-to-rem(-17px);
+      }
+      #{$parent}__text {
+        &:before {
+          width: px-to-rem(40px);
+        }
+      }
+      #{$parent}__img {
+        top: px-to-rem(212px);
+      }
+      #{$parent}__wrap {
+        &:before {
+          width: 40%;
+        }
+      }
+    }
+    &_adult {
+      #{$parent}__svg {
+        height: px-to-rem(895px);
+      }
+      #{$parent}__head {
+        margin-left: px-to-rem(136px);
+      }
+      #{$parent}__wrap {
+        &:before {
+          height: px-to-rem(552px);
+          top: 0;
+          left: 0;
+        }
+      }
+      #{$parent}__img {
+        top: px-to-rem(265px);
+        left: px-to-rem(-159px);
+
+      }
+    }
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .advantage {
+    $parent: &;
+    margin-bottom: px-to-rem(55px);
+    #{$parent}__svg {
+      display: none;
+    }
+    &__head {
+      font-size: px-to-rem(44px);
+      margin-bottom: px-to-rem(35px);
+    }
+    &__text {
+      margin-bottom: px-to-rem(20px);
+    }
+    &_child {
+      #{$parent}__text {
+        &:before {
+          width: px-to-rem(115px);
+          height: px-to-rem(275px);
+        }
+      }
+      #{$parent}__wrap {
+        &:before {
+          width: 26%;
+        }
+      }
+      #{$parent}__img {
+        position: absolute;
+        left: px-to-rem(358px);
+        bottom: px-to-rem(253px);
+      }
+    }
+    &_adult {
+      #{$parent}__text {
+        float: right;
+        &:before {
+          content: "";
+          float: left;
+          shape-outside: ellipse(50px 111px at 53% 18%);
+          width: px-to-rem(156px);
+          height: px-to-rem(235px);
+        }
+      }
+      #{$parent}__head {
+        margin-left: px-to-rem(24px);
+      }
+      #{$parent}__wrap {
+        &:before {
+          height: px-to-rem(466px);
+          top: px-to-rem(-47px);
+          left: 0;
+        }
+      }
+      #{$parent}__img {
+        top: px-to-rem(174px);
+        left: px-to-rem(-118px);
+      }
+    }
+  }
+}
+
+@include media-breakpoint-down(xs) {
+  .advantage {
+    $parent: &;
+    &__wrap {
+      padding: px-to-rem(24px) px-to-rem(16px);
+    }
+    &__head {
+      font-size: px-to-rem(28px);
+      margin-bottom: px-to-rem(30px);
+    }
+    &__head-small {
+      text-align: center;
+    }
+    &__text {
+      margin-bottom: px-to-rem(32px);
+    }
+    &__img {
+      display: none;
+    }
+    &_child {
+      #{$parent}__text,
+      #{$parent}__wrap {
+        &:before {
+          display: none;
+        }
+      }
+      #{$parent}__head-small {
+        text-align: center;
+      }
+    }
+    &_adult {
+      #{$parent}__text,
+      #{$parent}__wrap {
+        &:before {
+          content: none;
+        }
+      }
+      #{$parent}__head,
+      #{$parent}__head-small {
+        margin-left: 0;
+        text-align: center;
+      }
+    }
+  }
+}

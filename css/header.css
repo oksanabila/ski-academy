@@ -1,0 +1,11 @@
+.header {
+  height: px-to-rem(71px); }
+  .header__logo {
+    display: inline-block; }
+  .header__phone {
+    display: inline-block;
+    margin-top: px-to-rem(23px);
+    font-weight: 700;
+    font-size: px-to-rem(17px); }
+
+/*# sourceMappingURL=header.css.map */

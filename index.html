@@ -1,0 +1,1287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ski Academy</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="format-detection" content="telephone=no">
+    <link href="css/style.css" rel="stylesheet" media="all">
+</head>
+
+<body x-ms-format-detection="none">
+
+<header class="header">
+    <div class="header__wrap">
+        <div class="row">
+            <div class="col-3 col-sm-3 col-md-3 col-lg-2 col-xl-2">
+                <a href="" class="header__logo">
+                    <img src="img/logo.png">
+                </a>
+            </div>
+            <div class="col-7 col-sm-6 col-md-7 col-lg-3 col-xl-3">
+                <div class="header__phone">+44 (123) 456-78-90</div>
+            </div>
+            <div class="col-lg-7 col-xl-7 d-none d-lg-block">
+                <nav class="header-menu">
+                    <div class="header-menu__wrap navbar-collapse" id="exCollapsingNavbar">
+                        <div class="header-menu__item dropdown">
+                            <a href="#program_child" class="header-menu__link"
+                               id="dropdownMenuLink-1" data-toggle="dropdown" aria-haspopup="true"
+                               aria-expanded="false">For children
+                            </a>
+                            <div class="dropdown-menu header-menu__dropdown" aria-labelledby="dropdownMenuLink-1">
+                                <a class="header-menu__dropdown-link dropdown-item"
+                                   href="#timeline_child">Schedule</a>
+                                <a class="header-menu__dropdown-link dropdown-item"
+                                   href="#dates_child">Dates of the event</a>
+                                <a class="header-menu__dropdown-link dropdown-item"
+                                   href="#cost_child">Cost</a>
+                            </div>
+                        </div>
+                        <div class="header-menu__item dropdown">
+                            <a href="#program_adult" class="header-menu__link"
+                               id="dropdownMenuLink-2" data-toggle="dropdown" aria-haspopup="true"
+                               aria-expanded="false">For adults
+                            </a>
+                            <div class="dropdown-menu header-menu__dropdown" aria-labelledby="dropdownMenuLink-2">
+                                <a class="header-menu__dropdown-link dropdown-item"
+                                   href="#timeline_adult">Schedule</a>
+                                <a class="header-menu__dropdown-link dropdown-item"
+                                   href="#dates_adult">Dates of the event</a>
+                                <a class="header-menu__dropdown-link dropdown-item"
+                                   href="#cost_adult">Price</a>
+                            </div>
+                        </div>
+                        <div class="header-menu__item">
+                            <a href="#coaches" class="header-menu__link">Trainers</a>
+                        </div>
+                        <div class="header-menu__item">
+                            <a href="#reviews" class="header-menu__link">Reviews</a>
+                        </div>
+                        <div class="header-menu__item">
+                            <a href="#contacts" class="header-menu__link">Contacts</a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+
+            <div class="col-2 col-sm-2 offset-sm-1 col-md-2 offset-md-0 d-block d-lg-none">
+                <div class="header-mobile__button-wrap">
+                    <button class="header-mobile__button navbar-toggler" type="button"
+                            data-toggle="collapse" aria-expanded="false"
+                            aria-label="Toggle navigation"
+                    >
+                        <svg id="Layer_1" class="header-mobile__menu-open" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="22px" height="13px" viewBox="0 0 22 13" enable-background="new 0 0 22 13" xml:space="preserve" fill="#fff">
+<rect y="0" width="19" height="2"></rect>
+<rect y="5" width="19" height="2"></rect>
+<rect y="10" width="19" height="2"></rect>
+</svg>
+
+                        <svg class="header-mobile__menu-close" xmlns="http://www.w3.org/2000/svg" width="15px"
+                             height="15px"
+                             viewBox="0 0 26 26" stroke="#fff">
+                            <g fill-rule="evenodd" stroke-linecap="square" stroke-width="3">
+                                <path d="M2.874 2.973l20.59 20.59M22.874 2.973L2.676 23.563"></path>
+                            </g>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="header-mobile__menu" id="mobileMenu">
+                <div class="container">
+                    <nav class="mobile-menu">
+                        <div class="mobile-menu__wrap">
+                            <div class="mobile-menu__item">
+                                <a class="mobile-menu__link" data-toggle="collapse" href="#mobileMenu1" role="button"
+                                   aria-expanded="false" aria-controls="mobileMenu1">For children</a>
+                                <div class="collapse" id="mobileMenu1">
+                                    <a href="#timeline_child" class="mobile-menu__dd-link">
+                                        Schedule
+                                    </a>
+                                    <a href="#dates_child" class="mobile-menu__dd-link">
+                                        Dates of the event
+                                    </a>
+                                    <a href="#cost_child" class="mobile-menu__dd-link">
+                                        Price
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="mobile-menu__item">
+                                <a class="mobile-menu__link" data-toggle="collapse" href="#mobileMenu2" role="button"
+                                   aria-expanded="false" aria-controls="mobileMenu2">For adults</a>
+                                <div class="collapse" id="mobileMenu2">
+                                    <a href="#timeline_adult" class="mobile-menu__dd-link">
+                                        Schedule
+                                    </a>
+                                    <a href="#dates_adult" class="mobile-menu__dd-link">
+                                        Dates of the event
+                                    </a>
+                                    <a href="#cost_adult" class="mobile-menu__dd-link">
+                                        Price
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="mobile-menu__item">
+                                <a class="mobile-menu__link" href="#coaches">Trainers</a>
+                            </div>
+                            <div class="mobile-menu__item">
+                                <a class="mobile-menu__link" href="#reviews">Reviews</a>
+                            </div>
+                            <div class="mobile-menu__item">
+                                <a class="mobile-menu__link" href="#contacts">Contacts</a>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<section class="main-banner">
+    <svg class="main-banner__svg" id="layer-1" data-name="layer-1" xmlns="http://www.w3.org/2000/svg"
+         viewBox="0 0 1366 193">
+        <defs>
+            <style>.cls-1 {
+                fill: #fff;
+            }</style>
+        </defs>
+        <title>banner</title>
+        <path class="cls-1"
+              d="M1247.13,752.33c-154.88,0-305.77-166-622.54-166S64,743.08,64,743.08v29.25H1430v-193C1430,603.33,1402,752.33,1247.13,752.33Z"
+              transform="translate(-64 -579.33)"/>
+    </svg>
+    <div class="main-banner__image-wrap">
+        <img class="main-banner__image" src="img/main-banner-photo.png">
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-lg-7">
+                <h1 class="h1">Ski academy Tirol Club</h1>
+                <div class="text_l main-banner_text">
+                    A wide range of exciting ski programmes for children and adults
+                </div>
+
+                <div class="button__wrap button__wrap_shadow-white">
+                    <a href="#modal_form" class="modalbox button button_side_left button_color_white-blue">Register</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="about">
+    <div class="about__bg-image"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-10 offset-md-1 col-lg-4 offset-lg-0 col-xl-7">
+                <div class="about__photo-wrap">
+                    <img class="about__photo" src="img/about-photo.png">
+                </div>
+            </div>
+            <div class="col-12 col-lg-8 col-xl-5">
+                <div class="about__wrap">
+                    <h2 class="about__head h2">About us</h2>
+                    <div class="text_main">
+                        The ski academy Tirol club, the only specialised ski school that operates all year round, includes all phases of Ski school for children and adults. We offer a large number of training programmes, individual We offer a large number of training programmes for individuals and groups, from one hour to a whole day.
+                    </div>
+                    <div class="button__wrap button__wrap_shadow-blue">
+                        <a href="#modal_about" class="modalbox button button_side_right button_color_blue">Read more</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+<section class="program program_child" id="program_child">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-lg-9 col-xl-8">
+               <h2 class="program__head h2">Programme <span class="program__head-small">for kids</span></h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-lg-6  col-xl-4 offset-xl-0">
+                <div class="program-item program-item_left">
+                    <a href="/" class="program-item__image-wrap">
+                        <img class="program-item__image" src="img/chick.png">
+                    </a>
+                    <a href="/" class="program-item__title">
+                        Just getting started
+                    </a>
+                    <div class="program-item__text text_xs">
+                        One- or two-hour private lessons with an instructor. These sessions will quickly
+                        prepare your child for ski camp
+                    </div>
+                    <div class="program-item__hover-wrap">
+                        <a href="#modal_form" class="modalbox button button_color_red">Register</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6  col-xl-4 offset-xl-0">
+                <div class="program-item program-item_center">
+                    <a href="/" class="program-item__image-wrap">
+                        <img class="program-item__image" src="img/penguin-1.png">
+                    </a>
+                    <a href="/" class="program-item__title">
+                        Already on the road
+                    </a>
+                    <div class="program-item__text text_xs">
+                        For children already skiing from 5 to 14 years old, we have created a five-day children's
+                        ski camp. Trust us, at the end of this course, you won't recognise your child on the slope
+                        your child
+                    </div>
+                    <div class="program-item__hover-wrap">
+                        <a href="#modal_form" class="modalbox button button_color_red">Register</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6 offset-lg-3 col-xl-4 offset-xl-0">
+                <div class="program-item program-item_right">
+                    <a href="/" class="program-item__image-wrap">
+                        <img class="program-item__image" src="img/penguin-2.png">
+                    </a>
+                    <a href="/" class="program-item__title">
+                        A little pro
+                    </a>
+                    <div class="program-item__text text_xs">
+                        For children who want to ski more professionally, we have a year-round
+                        A sports skiing section is open all year round, with five-day sports camps
+                    </div>
+                    <div class="program-item__hover-wrap">
+                        <a href="#modal_form" class="modalbox button button_color_red">Register</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="advantage advantage_child">
+    <svg class="advantage__svg" id="layer-2" data-name="layer-2" xmlns="http://www.w3.org/2000/svg"
+         viewBox="0 0 1146.5 1146.27">
+        <defs>
+            <style>
+                .cls-2 {
+                    fill: #fdeeee;
+                }</style>
+        </defs>
+        <title>What's so good about</title>
+        <path class="cls-2"
+              d="M577-563.13s-356,221-637,306c-167,51-249,54-287,63s-195,47-216,147,15,164,22,187,29,47,8,126-31,124-5,178,148,128,216,128c66,6,238,25,357-6s317-85,426-141l109-56Z"
+              transform="translate(569.5 563.13)"/>
+    </svg>
+    <div class="container">
+        <div class="advantage__wrap">
+            <h3 class="advantage__head h3 h3_small">What's so good about<span
+                    class="advantage__head-small">children's camp</span></h3>
+            <img class="advantage__img" src="img/kid-ski-3.png">
+            <div class="row">
+                <div class="col-12 col-md-8 col-lg-7">
+                    <div class="advantage__about">
+                        <div class="advantage__text text_s">
+                            What makes it good? Because camp training will allow you to systematise your previous scattered
+                            lessons with different instructors. We can get your child into a fun and interesting
+                            training. Classes are held in a small group of 4 to 5 kids of the same age. In a playful and
+                            competitive form. And, of course, it will save you
+                            your money!
+                        </div>
+                        <div class="button__wrap  button__wrap_shadow-red">
+                            <a href="#modal_program-child" class="modalbox button button_side_right button_color_red">Read more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="schedule">
+    <div class="container">
+        <div class="schedule__wrap" id="timeline_child">
+            <h3 class="schedule__head h3">Training schedule</h3>
+            <ul class="schedule-timeline">
+                <li class="schedule-timeline__line">
+                    <div class="schedule-timeline__wrap">
+                        <div class="schedule-timeline__badge"></div>
+                        <div class="schedule-timeline__panel schedule-timeline__panel_time">
+                            <div class="schedule-timeline__heading">
+                                <h4 class="schedule-timeline__title ">9:45</h4>
+                            </div>
+                        </div>
+                        <div class="schedule-timeline__panel schedule-timeline__panel_desc">
+                            <div class="schedule-timeline__heading">
+                                <h4 class="schedule-timeline__title text_l">Gathering at the school premises</h4>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="schedule-timeline__line">
+                    <div class="schedule-timeline__wrap schedule-timeline__wrap_workout">
+                        <div class="schedule-timeline__badge"></div>
+                        <div class="schedule-timeline__panel schedule-timeline__panel_time">
+                            <div class="schedule-timeline__heading">
+                                <h4 class="schedule-timeline__title ">10:00 - 12:00</h4>
+                            </div>
+                        </div>
+                        <div class="schedule-timeline__panel schedule-timeline__panel_desc">
+                            <div class="schedule-timeline__heading">
+                                <h4 class="schedule-timeline__title text_l">First training</h4>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="schedule-timeline__line">
+                    <div class="schedule-timeline__wrap">
+                        <div class="schedule-timeline__badge"></div>
+                        <div class="schedule-timeline__panel schedule-timeline__panel_time">
+                            <div class="schedule-timeline__heading">
+                                <h4 class="schedule-timeline__title ">12:30 - 14:00</h4>
+                            </div>
+                        </div>
+                        <div class="schedule-timeline__panel schedule-timeline__panel_desc">
+                            <div class="schedule-timeline__heading">
+                                <h4 class="schedule-timeline__title text_l">Lunch and rest</h4>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="schedule-timeline__line">
+                    <div class="schedule-timeline__wrap schedule-timeline__wrap_workout">
+                        <div class="schedule-timeline__badge"></div>
+                        <div class="schedule-timeline__panel schedule-timeline__panel_time">
+                            <div class="schedule-timeline__heading">
+                                <h4 class="schedule-timeline__title text_l">14:00 - 16:00</h4>
+                            </div>
+                        </div>
+                        <div class="schedule-timeline__panel schedule-timeline__panel_desc">
+                            <div class="schedule-timeline__heading">
+                                <h4 class="schedule-timeline__title">Second training</h4>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="schedule__wrap">
+            <div class="schedule-dates" id="dates_child">
+                <h3 class="schedule__head h3">Dates of the event</h3>
+                <div class="row">
+                    <div class="col-12 col-lg-6">
+                        <div class="schedule-dates-item">
+                            <div class="schedule-dates-item__title">Children's skiing camp schedule</div>
+                            <div class="schedule-dates-item__month-wrap">
+                                <div class="schedule-dates-item__month text_main">December 2018</div>
+                            </div>
+                            <div class="schedule-dates-item__dates-wrap">
+                                <div class="schedule-dates-item__dates text_main">17 - 21 Dec</div>
+                                <div class="schedule-dates-item__dates text_main">24 - 28 Dec</div>
+                            </div>
+
+                            <div class="schedule-dates-item__month-wrap">
+                                <div class="schedule-dates-item__month text_main">January 2019</div>
+                            </div>
+                            <div class="schedule-dates-item__dates-wrap">
+                                <div class="schedule-dates-item__dates text_main">7 - 11 Jan</div>
+                                <div class="schedule-dates-item__dates text_main">14 - 18 Jan</div>
+                                <div class="schedule-dates-item__dates text_main">21 - 25 Jan</div>
+                                <div class="schedule-dates-item__dates text_main">28 Jan - 1 Feb</div>
+                            </div>
+
+                            <div class="schedule-dates-item__month-wrap">
+                                <div class="schedule-dates-item__month text_main">February 2019</div>
+                            </div>
+                            <div class="schedule-dates-item__dates-wrap">
+                                <div class="schedule-dates-item__dates text_main">4 - 8 Feb</div>
+                                <div class="schedule-dates-item__dates text_main">24 - 28 Feb</div>
+                                <div class="schedule-dates-item__dates text_main">14 - 18 Feb</div>
+                                <div class="schedule-dates-item__dates text_main">21 - 25 Feb</div>
+                                <div class="schedule-dates-item__dates text_main">28 Feb - 1 March</div>
+                            </div>
+                            <div class="schedule-dates-item__month-wrap">
+                                <div class="schedule-dates-item__month text_main">March 2019</div>
+                            </div>
+                            <div class="schedule-dates-item__dates-wrap">
+                                <div class="schedule-dates-item__dates text_main">4 - 8 March</div>
+                                <div class="schedule-dates-item__dates text_main">24 - 28 March</div>
+                                <div class="schedule-dates-item__dates text_main">14 - 18 March</div>
+                                <div class="schedule-dates-item__dates text_main">21 - 25 March</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <div class="schedule-dates-item">
+                            <div class="schedule-dates-item__title">Schedule of sports training camps for children</div>
+                            <div class="schedule-dates-item__month-wrap">
+                                <div class="schedule-dates-item__month text_main">December 2018</div>
+                            </div>
+                            <div class="schedule-dates-item__dates-wrap">
+                                <div class="schedule-dates-item__dates text_main">17 - 21 Dec</div>
+
+                            </div>
+                            <div class="schedule-dates-item__month-wrap">
+                                <div class="schedule-dates-item__month text_main">Январь 2019</div>
+                            </div>
+                            <div class="schedule-dates-item__dates-wrap">
+                                <div class="schedule-dates-item__dates text_main">7 - 11 Jan</div>
+                            </div>
+
+                            <div class="schedule-dates-item__month-wrap">
+                                <div class="schedule-dates-item__month text_main">February 2019</div>
+                            </div>
+                            <div class="schedule-dates-item__dates-wrap">
+                                <div class="schedule-dates-item__dates text_main">14 - 18 Feb</div>
+                            </div>
+                            <div class="schedule-dates-item__month-wrap">
+                                <div class="schedule-dates-item__month text_main">March 2019</div>
+                            </div>
+                            <div class="schedule-dates-item__dates-wrap">
+                                <div class="schedule-dates-item__dates text_main">21 - 25 March</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="cost cost_child" id="cost_child">
+    <svg class="cost__svg cost__svg_top" id="layer-3" data-name="layer-3" xmlns="http://www.w3.org/2000/svg"
+         viewBox="0 0 1367 715.18">
+        <defs>
+            <style>.cls-3 {
+                fill: #fff;
+            }</style>
+        </defs>
+        <title>Price курса-детский</title>
+        <path class="cls-3" d="M710.33-884v714c-611.66-188-1366-698.67-1366-698.67V-884Z"
+              transform="translate(656.17 884.5)"/>
+    </svg>
+    <svg class="cost__svg cost__svg_bottom" id="layer-4" data-name="layer-4" xmlns="http://www.w3.org/2000/svg"
+         viewBox="0 0 1367 490.79">
+        <defs>
+            <style>.cls-4 {
+                fill: #fff;
+            }</style>
+        </defs>
+        <title>Price course-children's</title>
+        <path class="cls-4" d="M710.33,1038h-1366V548.67c526.34,366.66,1366,477.33,1366,477.33Z"
+              transform="translate(656.17 -547.71)"/>
+    </svg>
+    <div class="container">
+        <img class="cost__img" src="img/ping-ski.png">
+        <div class="cost__wrap">
+            <h3 class="cost__head h3">Price course</h3>
+            <div class="cost__title text_l">
+                The price of a five-day course is
+            </div>
+            <div class="cost__sum">
+                1990 <span class="dollar">$</span>
+            </div>
+            <div class="cost__desc text_main">
+                <p>Extra cost - dinners in the cafe
+                    (35-40 Z per day), ski passes for children over 6 years old.
+                    There is a 20% discount for skipasses for residents of
+                    at Gorky Gorod Resort.
+                </p>
+                <p>
+                    Нand renting equipment from our rentals, a special discount is available.
+                    a special discount. With the purchase of a ski pass, all participants are insured in ... But we recommend
+                    to take out an additional<a href="/" class="link_white">on-line sports insurance</a>
+                    on alpine skiing for the duration of the camp.
+                </p>
+                <p>
+                    If you have your own group of 4 or more, we can offer you an individual
+                    Ski or snowboard course at your own pace.
+                </p>
+            </div>
+            <div class="button__wrap  button__wrap_shadow-white">
+                <a href="#modal_form" class="modalbox button button_side_right button_color_white-red">Register</a>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="program program_adult" id="program_adult">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-lg-9 col-xl-8">
+                <h2 class="program__head h2">Programme <span class="program__head-small">for adults</span></h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-lg-6  col-xl-4 offset-xl-0">
+                <div class="program-item program-item_left">
+                    <a href="/" class="program-item__image-wrap">
+                        <img class="program-item__image" src="img/snowboard.png">
+                    </a>
+                    <a href="/" class="program-item__title">
+                        Beginners
+                    </a>
+                    <div class="program-item__text text_xs">
+                        One- or two-hour private lessons with an instructor. These sessions will quickly
+                        get you ready for ski camp
+                    </div>
+                    <div class="program-item__hover-wrap">
+                        <a href="#modal_form" class="modalbox button button_color_blue">Register</a>
+                    </div>
+                </div>
+            </div>
+            <div class="d-none d-xl-block  col-xl-4 offset-xl-0">
+                <div class="program-item program-item_center"></div>
+            </div>
+            <div class="col-12 col-lg-6 col-xl-4 offset-xl-0">
+                <div class="program-item program-item_right">
+                    <a href="/" class="program-item__image-wrap">
+                        <img class="program-item__image" src="img/ski-1.png">
+                    </a>
+                    <a href="/" class="program-item__title">
+                        Experienced
+                    </a>
+                    <div class="program-item__text text_xs">
+                        For adults who are already skiing, we have set up a five-day adult skiing
+                        ski camp. Trust us, at the end of this course, you won't recognise yourself on the slope
+                    </div>
+                    <div class="program-item__hover-wrap">
+                        <a href="#modal_form" class="modalbox button button_color_blue">Register</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="advantage advantage_adult">
+    <svg class="advantage__svg" id="layer-5" data-name="layer-5" xmlns="http://www.w3.org/2000/svg"
+         viewBox="0 0 1146.5 1146.27">
+        <defs>
+            <style>
+                .cls-5 {
+                    fill: #e6f7fe;
+                }</style>
+        </defs>
+        <title>What's so good about</title>
+        <path class="cls-5"
+              d="M577-563.13s-356,221-637,306c-167,51-249,54-287,63s-195,47-216,147,15,164,22,187,29,47,8,126-31,124-5,178,148,128,216,128c66,6,238,25,357-6s317-85,426-141l109-56Z"
+              transform="translate(569.5 563.13)"/>
+    </svg>
+    <div class="container">
+        <div class="advantage__wrap">
+            <h3 class="advantage__head h3 h3_small">Do I need<span
+                    class="advantage__head-small">an adult programme?</span></h3>
+            <img class="advantage__img" src="img/descent-skier.png">
+            <div class="row">
+                <div class="col-12 offset-md-4 col-md-8 col-lg-7 offset-lg-5">
+                    <div class="advantage__about">
+                        <div class="advantage__text text_s">
+                            What makes it good? Because camp training will allow you to systematise your previous scattered
+                            lessons with different instructors. We can get your child into a fun and interesting
+                            training. Classes are held in a small group of 4 to 5 kids of the same age. In a playful and
+                            competitive form. And, of course, it will save you
+                            your money!
+                        </div>
+                        <div class="button__wrap  button__wrap_shadow-blue">
+                            <a href="#modal_program-adult" class="modalbox button button_side_right button_color_blue">Read more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="schedule">
+    <div class="container">
+        <div class="schedule__wrap" id="timeline_adult">
+            <h3 class="schedule__head h3">Training schedule</h3>
+            <ul class="schedule-timeline">
+                <li class="schedule-timeline__line">
+                    <div class="schedule-timeline__wrap">
+                        <div class="schedule-timeline__badge"></div>
+                        <div class="schedule-timeline__panel schedule-timeline__panel_time">
+                            <div class="schedule-timeline__heading">
+                                <h4 class="schedule-timeline__title ">9:45</h4>
+                            </div>
+                        </div>
+                        <div class="schedule-timeline__panel schedule-timeline__panel_desc">
+                            <div class="schedule-timeline__heading">
+                                <h4 class="schedule-timeline__title text_l">Gathering at the school premises</h4>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="schedule-timeline__line">
+                    <div class="schedule-timeline__wrap schedule-timeline__wrap_workout">
+                        <div class="schedule-timeline__badge"></div>
+                        <div class="schedule-timeline__panel schedule-timeline__panel_time">
+                            <div class="schedule-timeline__heading">
+                                <h4 class="schedule-timeline__title ">10:00 - 12:00</h4>
+                            </div>
+                        </div>
+                        <div class="schedule-timeline__panel schedule-timeline__panel_desc">
+                            <div class="schedule-timeline__heading">
+                                <h4 class="schedule-timeline__title text_l">First training session</h4>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="schedule-timeline__line">
+                    <div class="schedule-timeline__wrap">
+                        <div class="schedule-timeline__badge"></div>
+                        <div class="schedule-timeline__panel schedule-timeline__panel_time">
+                            <div class="schedule-timeline__heading">
+                                <h4 class="schedule-timeline__title ">12:30 - 14:00</h4>
+                            </div>
+                        </div>
+                        <div class="schedule-timeline__panel schedule-timeline__panel_desc">
+                            <div class="schedule-timeline__heading">
+                                <h4 class="schedule-timeline__title text_l">Lunch and relaxation</h4>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="schedule-timeline__line">
+                    <div class="schedule-timeline__wrap schedule-timeline__wrap_workout">
+                        <div class="schedule-timeline__badge"></div>
+                        <div class="schedule-timeline__panel schedule-timeline__panel_time">
+                            <div class="schedule-timeline__heading">
+                                <h4 class="schedule-timeline__title text_l">14:00 - 16:00</h4>
+                            </div>
+                        </div>
+                        <div class="schedule-timeline__panel schedule-timeline__panel_desc">
+                            <div class="schedule-timeline__heading">
+                                <h4 class="schedule-timeline__title">Second training</h4>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="schedule__wrap">
+            <div class="schedule-dates" id="dates_adult">
+                <h3 class="schedule__head h3">Dates of the event</h3>
+                <div class="row">
+                    <div class="col-12 col-lg-6">
+                        <div class="schedule-dates-item">
+                            <div class="schedule-dates-item__title">Schedule of sporting events for adults</div>
+                            <div class="schedule-dates-item__month-wrap">
+                                <div class="schedule-dates-item__month text_main">December 2018</div>
+                            </div>
+                            <div class="schedule-dates-item__dates-wrap">
+                                <div class="schedule-dates-item__dates text_main">17 - 21 Dec</div>
+
+                            </div>
+                            <div class="schedule-dates-item__month-wrap">
+                                <div class="schedule-dates-item__month text_main">January 2019</div>
+                            </div>
+                            <div class="schedule-dates-item__dates-wrap">
+                                <div class="schedule-dates-item__dates text_main">7 - 11 Jan</div>
+                            </div>
+
+                            <div class="schedule-dates-item__month-wrap">
+                                <div class="schedule-dates-item__month text_main">February 2019</div>
+                            </div>
+                            <div class="schedule-dates-item__dates-wrap">
+                                <div class="schedule-dates-item__dates text_main">14 - 18 Feb</div>
+                            </div>
+                            <div class="schedule-dates-item__month-wrap">
+                                <div class="schedule-dates-item__month text_main">March 2019</div>
+                            </div>
+                            <div class="schedule-dates-item__dates-wrap">
+                                <div class="schedule-dates-item__dates text_main">21 - 25 March</div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="cost cost_adult"id="cost_adult">
+    <svg class="cost__svg cost__svg_top" id="layer-6" data-name="layer-6" xmlns="http://www.w3.org/2000/svg"
+         viewBox="0 0 1367 715.18">
+        <defs>
+            <style>.cls-6 {
+                fill: #fff;
+            }</style>
+        </defs>
+        <title>Price course - children's</title>
+        <path class="cls-6" d="M-655.67-884v714c611.67-188,1366-698.67,1366-698.67V-884Z"
+              transform="translate(656.17 884.5)"/>
+    </svg>
+    <svg class="cost__svg cost__svg_bottom" id="layer-7" data-name="layer-7" xmlns="http://www.w3.org/2000/svg"
+         viewBox="0 0 1367 490.79">
+        <defs>
+            <style>.cls-7 {
+                fill: #fff;
+            }</style>
+        </defs>
+        <title>Price course - children's</title>
+        <path class="cls-7" d="M-655.67,1038h1366V548.67C184,915.33-655.67,1026-655.67,1026Z"
+              transform="translate(656.17 -547.71)"/>
+    </svg>
+    <div class="container">
+        <img class="cost__img" src="img/bear_skier.png">
+        <div class="cost__wrap">
+            <h3 class="cost__head h3">Price of the course</h3>
+            <div class="cost__title text_l">
+                Price of a five-day course is
+            </div>
+            <div class="cost__sum">
+                2250 <span class="dollar">$</span>
+            </div>
+            <div class="cost__desc text_main">
+                <p>
+                    If necessary, ski passes and equipment rental fees are payable separately. The ski passes are subject to
+                    20% discount for residents of the resort.
+                </p>
+                <p>
+                    For renting equipment from our rentals, there is a
+                    a special discount. When purchasing a ski pass, all skiers are insured in ... But we recommend
+                    to take out an additional <a href="/" class="link_white">on-line sports insurance</a>
+                    on alpine skiing for the duration of the camp.
+                </p>
+                <p>
+                    If you have your own group of 4 or more, we can offer you an individual
+                    Ski or snowboard course at your own pace.
+                </p>
+            </div>
+            <div class="button__wrap  button__wrap_shadow-white">
+                <a href="#modal_form" class="modalbox button button_side_left button_color_white-blue">Register</a>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="coaches-slider" id="coaches">
+    <div class="container">
+        <h3 class="coaches-slider__head h3">Coaching staff</h3>
+        <div class="coaches-slider__wrap">
+            <a href="/" class="coaches-item__wrap">
+                <div class="coaches-item">
+                    <div class="coaches-item__photo">
+                        <img src="img/leonova-s.jpg">
+                    </div>
+                    <div class="coaches-item__name text_main">John Doe</div>
+                    <div class="coaches-item__desc">Ski and snowboard instructor</div>
+                </div>
+            </a>
+            <a href="/" class="coaches-item__wrap">
+                <div class="coaches-item">
+                    <div class="coaches-item__photo">
+                        <img src="img/phillipova-s.jpg">
+                    </div>
+                    <div class="coaches-item__name text_main">John Doe</div>
+                    <div class="coaches-item__desc">Ski and snowboard instructor</div>
+                </div>
+            </a>
+
+            <a href="/" class="coaches-item__wrap">
+                <div class="coaches-item">
+                    <div class="coaches-item__photo">
+                        <img src="img/kasjanov-s.jpg">
+                    </div>
+                    <div class="coaches-item__name text_main">John Doe</div>
+                    <div class="coaches-item__desc">Ski instructor</div>
+                </div>
+            </a>
+            <a href="/" class="coaches-item__wrap">
+                <div class="coaches-item">
+                    <div class="coaches-item__photo">
+                        <img src="img/phillipova-s.jpg">
+                    </div>
+                    <div class="coaches-item__name text_main">John Doe</div>
+                    <div class="coaches-item__desc">Ski and snowboard instructor</div>
+                </div>
+            </a>
+        </div>
+    </div>
+</section>
+<section class="questions">
+    <div class="container">
+        <h3 class="questions__head h3">Q&A</h3>
+        <div class="questions__item">
+            <div class="questions__title text_l">What skating skills should those wishing to learn have?</div>
+            <div class="questions__desc text_l">
+                The programme is designed for skating children from 5 to 14 years old. The minimum level is a confident, controlled
+                downhill on green slopes. If your child is a little younger, skates well and can handle the whole day, they
+                can also be included in the camp, after a test run. If your child's skiing skills
+                are a little lower than they should be, our instructors will be able to prepare them individually or in groups.
+                for our camp.
+            </div>
+        </div>
+        <div class="questions__item">
+            <div class="questions__title text_l">How old can I be in the camp?</div>
+            <div class="questions__desc text_l">
+                Depending on your child's physical condition and skills. After individual testing with
+                our coaches, participation from 4-5 years old is possible. Our instructors can, in just a few one-to-one lessons, prepare your child
+                quickly prepare your child for ski camp.
+            </div>
+        </div>
+        <div class="questions__item">
+            <div class="questions__title text_l">What if I don't have skiing equipment?</div>
+            <div class="questions__desc text_l">
+                All necessary equipment at various levels, including a safety helmet, can be rented from our
+                rentals. Special discounts are available for course participants.
+            </div>
+        </div>
+        <div class="button__wrap button__wrap_shadow-blue">
+            <a href="/" class="button button_side_right button_color_blue">Read more</a>
+        </div>
+    </div>
+</section>
+<section class="reviews" id="reviews">
+    <div class="container">
+        <h3 class="reviews__head h3">Reviews</h3>
+        <div class="reviews-slider">
+            <div class="reviews-item__wrap">
+                <div class="reviews-item">
+                    <div class="reviews-item__title">
+                        <div class="reviews-item__name text_l">Helena and Constantine</div>
+                        <div class="reviews-item__date text_main">23 Nov, 15:43</div>
+                    </div>
+                    <div class="reviews-item__desc text_l">
+                        "A huge thank you to John Doe! The talented young man was able to gain the confidence of a very
+                        of a very young beginner skier (3.5 years old) and his mother, who is switching from snowboarding to skiing. And if in
+                        And if in my son's case the main thing was to introduce him to the skiing culture, with me it was more complicated - I expected results that I would be happy with.
+                        I expected a result that I was happy with after only three lessons. Calm, methodical,
+                        John was able to take me from a complete zero to a fully confident
+                        turnaround. I definitely recommend to anyone who wants results and appreciates the personal involvement of a trainer.
+                        John.
+                    </div>
+                </div>
+            </div>
+            <div class="reviews-item__wrap">
+                <div class="reviews-item">
+                    <div class="reviews-item__title">
+                        <div class="reviews-item__name text_l">Peter and Amanda</div>
+                        <div class="reviews-item__date text_main">23 Nov, 9:12</div>
+                    </div>
+                    <div class="reviews-item__desc text_l">
+                        Feedback on our service can be left in the Facebook community Instructors and Guides Service
+                        Tirol Club or on your account with the hashtag.
+                        And his encouraging smile and the ability to shift your attention in difficult moments will help you
+                        on your way to conquering the mountain peaks."
+                        Feedback on our service can be left in the Facebook community Instructors and Guides Service
+                        Tirol Club or on your account with the hashtag.
+                    </div>
+                </div>
+            </div>
+            <div class="reviews-item__wrap">
+                <div class="reviews-item">
+                    <div class="reviews-item__title">
+                        <div class="reviews-item__name text_l">Helena and Constantine</div>
+                        <div class="reviews-item__date text_main">23 Nov, 15:43</div>
+                    </div>
+                    <div class="reviews-item__desc text_l">
+                        And if in my son's case the main thing was to introduce him to the skiing culture, with me it was more complicated - I expected results that I would be happy with.
+                        I expected a result that I was happy with after only three lessons. Calm, methodical,
+                        John was able to take me from a complete zero to a fully confident
+                        turnaround. I definitely recommend to anyone who wants results and appreciates the personal involvement of a trainer.
+                        John. And his encouraging smile and the ability to shift your attention in difficult moments will help you
+                        on your way to conquering the mountain peaks."
+
+                    </div>
+                </div>
+            </div>
+            <div class="reviews-item__wrap">
+                <div class="reviews-item">
+                    <div class="reviews-item__title">
+                        <div class="reviews-item__name text_l">Peter and Amanda</div>
+                        <div class="reviews-item__date text_main">23 Nov, 9:12</div>
+                    </div>
+                    <div class="reviews-item__desc text_l">
+                        Feedback on our service can be left in the Facebook community Instructors and Guides Service
+                        Tirol Club or on your account with the hashtag.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="rent">
+    <svg class="rent__svg rent__svg_top" id="layer-8" data-name="layer-8" xmlns="http://www.w3.org/2000/svg"
+         viewBox="0 0 1366 112.6">
+        <defs>
+            <style>.cls-8 {
+                fill: #fff;
+            }</style>
+        </defs>
+        <title>We also have a work-over</title>
+        <path class="cls-8" d="M-18-162s835,11,1366-95v-16H-18Z" transform="translate(18 274.28)"/>
+    </svg>
+    <svg class="rent__svg rent__svg_bottom" id="layer-9" data-name="layer-9" xmlns="http://www.w3.org/2000/svg"
+         viewBox="0 0 1366 56.08">
+        <defs>
+            <style>.cls-9 {
+                fill: #fff;
+            }</style>
+        </defs>
+        <title>We also have a work</title>
+        <path class="cls-9" d="M-93-229s428-66,1366,12v18H-93Z" transform="translate(93 255.08)"/>
+    </svg>
+    <img src="img/ski.png" class="rent__img">
+    <div class="container">
+        <h3 class="questions__head h3">And we also have</h3>
+        <div class="rent__title">ski equipment rental</div>
+        <div class="button__wrap">
+            <a href="https://tirolclub.com/winter-rent.html" target="_blank" class="button button_side_right button_color_pink">Go to the site</a>
+        </div>
+    </div>
+</section>
+<section class="form">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 offset-0 col-lg-10 offset-lg-1">
+                <div class="form__wrap">
+                    <h4 class="form__head h4">Signing up for classes</h4>
+                    <form >
+                        <div class="form__item">
+                            <div class="form__select">
+                                <label class="form__label">Course selection*</label>
+                                <select>
+                                    <option value="" hidden selected> Select from the list</option>
+                                    <option value="0">Course 1</option>
+                                    <option value="1">Course 2</option>
+                                    <option value="2">Course 3</option>
+                                    <option value="3">Course 4</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form__item">
+                            <div class="form__select">
+                                <label class="form__label">Study period*</label>
+                                <select>
+                                    <option value="" hidden selected>Select convenient dates from the list</option>
+                                    <option value="0">1 - 20 Dec</option>
+                                    <option value="1">20 - 29 Dec</option>
+                                    <option value="2">8 - 17 Jan</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form__item-wrap">
+                            <div class="form__item float-lg-left">
+                                <label class="form__label">Name*</label>
+                                <input class="form__field form__field_medium" type="text">
+                            </div>
+                            <div class="form__item float-lg-right">
+                                <label class="form__label">Phone number*</label>
+                                <input class="form__field form__field_small" type="text" placeholder="+44 123 456-78-90">
+                            </div>
+                        </div>
+                        <div class="form__item">
+                            <label class="form__label">Email*</label>
+                            <input class="form__field form__field_long" type="text" placeholder="sample@sample.com">
+                        </div>
+                        <div class="form__item">
+                            <div class="material-switch pull-right">
+                                <input id="someSwitchOptionDefault" name="someSwitchOption001" type="checkbox"/>
+                                <label for="someSwitchOptionDefault" class="form__label label-default">I want to receive
+                                    the newsletter for interesting offers
+                                    from Tirol club</label>
+                            </div>
+                        </div>
+                        <div class="button__wrap">
+                            <a href="/" class="button button_side_right button_color_blue">Send</a>
+                        </div>
+                        <div class="form__note">By clicking on the "Submit" button, I consent to the following
+                            to the processing of personal data
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="map" id="contacts">
+    <div class="map-slider offset-lg-1">
+        <div class="map-slider__item-wrap">
+            <div class="map-slider-item">
+                <div class="map-slider-item__info">
+                    <div class="map-slider-item__head">
+                        Sporthalle Färbi Davos
+                    </div>
+                    <div class="map-slider-item__phone">
+                        +44 (123) 456-78-90
+                    </div>
+                </div>
+                <div class="map-slider-item__about">
+                    Place CH, Clavadelerstrasse 5, 7270 Davos, Switzerland
+                </div>
+                <div class="map-slider-item__about">
+                    Mode of operation<br>
+                    weekdays 09:00 - 18:00<br>
+                    <span class="map-slider-item__about_small">
+                        (on evening skating days from 09:00 to 22:00)
+                    </span>
+                </div>
+            </div>
+            <div class="map-slider-item">
+                <div class="map-slider-item__info">
+                    <div class="map-slider-item__head">
+                        Sporthalle Färbi Davos
+                    </div>
+                    <div class="map-slider-item__phone">
+                        +44 (123) 456-78-90
+                    </div>
+                </div>
+                <div class="map-slider-item__about">
+                    Place CH, Clavadelerstrasse 5, 7270 Davos, Switzerland
+                </div>
+                <div class="map-slider-item__about">
+                    Mode of operation<br>
+                    weekdays 09:00 - 18:00<br>
+                    <span class="map-slider-item__about_small">
+                        (on evening skating days from 09:00 to 22:00)
+                    </span>
+                </div>
+            </div>
+            <div class="map-slider-item">
+                <div class="map-slider-item__info">
+                    <div class="map-slider-item__head">
+                        Sporthalle Färbi Davos
+                    </div>
+                    <div class="map-slider-item__phone">
+                        +44 (123) 456-78-90
+                    </div>
+                </div>
+                <div class="map-slider-item__about">
+                    Place CH, Clavadelerstrasse 5, 7270 Davos, Switzerland
+                </div>
+                <div class="map-slider-item__about">
+                    Mode of operation<br>
+                    weekdays 09:00 - 18:00<br>
+                    <span class="map-slider-item__about_small">
+                        (on evening skating days from 09:00 to 22:00)
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="map-slider__navigation">
+            <div class="map-slider__dots-wrap"></div>
+            <div class="map-slider__payments-wrap">
+                <div class="map-slider__payments-title">
+                    Accepted for payment
+                </div>
+                <div class="map-slider__payments-icon-wrap" href="">
+                    <div class="map-slider__payments-icon">
+                        <img src="img/mastercard-icon.png" class="map-slider__payments-img">
+                    </div>
+                </div>
+                <div class="map-slider__payments-icon-wrap" href="">
+                    <div class="map-slider__payments-icon">
+                        <img src="img/visa-icon.jpg" class="map-slider__payments-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="popups">
+    <div class="modal-window modal-window_about" id="modal_about">
+        <div class="modal-window__bg" style="background-image: url('img/about-modal-bg.jpg');"></div>
+        <div class="modal-window__head">Academy</div>
+        <div class="text_main modal-window__text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+        </div>
+    </div>
+    <div class="modal-window modal-window_about" id="modal_program-child">
+        <div class="modal-window__bg" style="background-image: url('img/about-modal-bg.jpg');"></div>
+        <div class="modal-window__head">Kids' camp</div>
+        <div class="text_s modal-window__text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+        </div>
+    </div>
+    <div class="modal-window modal-window_about" id="modal_program-adult">
+        <div class="modal-window__bg" style="background-image: url('img/about-modal-bg.jpg');"></div>
+        <div class="modal-window__head">Adult programme</div>
+        <div class="text_s modal-window__text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+        </div>
+    </div>
+    <div class="modal-window modal-window_form" id="modal_form">
+        <div class="form">
+            <div class="form__wrap">
+                <h4 class="form__head h4">Signing up for classes</h4>
+                <form>
+                    <div class="form__item">
+                        <div class="form__select form__select_selected">
+                            <label class="form__label">Course selection*</label>
+                            <select>
+                                <option value="0" selected>Kids starter</option>
+                                <option value="1">Kids basic</option>
+                                <option value="2">Course 3</option>
+                                <option value="3">Course 4</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form__item">
+                        <div class="form__select">
+                            <label class="form__label">Study period*</label>
+                            <select>
+                                <option value="" hidden selected> Select convenient dates from the list</option>
+                                <option value="0">1 - 20 Dec</option>
+                                <option value="1">20 - 29 Dec</option>
+                                <option value="2">8 - 17 Jan</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form__item-wrap">
+                        <div class="form__item float-lg-left">
+                            <label class="form__label">Name*</label>
+                            <input class="form__field form__field_medium" type="text">
+                        </div>
+                        <div class="form__item float-lg-right">
+                            <label class="form__label">Phone number*</label>
+                            <input class="form__field form__field_small" type="text" placeholder="+7 123 456-78-90">
+                        </div>
+                    </div>
+                    <div class="form__item">
+                        <label class="form__label">Email*</label>
+                        <input class="form__field form__field_long" type="text" placeholder="sample@sample.com">
+                    </div>
+                    <div class="form__item">
+                        <div class="material-switch pull-right">
+                            <input id="someSwitchOptionDefault-2" name="someSwitchOption001" type="checkbox"/>
+                            <label for="someSwitchOptionDefault-2" class="form__label label-default">I want to receive
+                                the newsletter for interesting offers
+                                from Tirol club</label>
+                        </div>
+                    </div>
+                    <div class="button__wrap">
+                        <a href="/" class="button button_side_right button_color_blue">Send</a>
+                    </div>
+                    <div class="form__note">By clicking on the "Submit" button, I consent to the following
+                        to the processing of personal data
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="footer">
+    <svg class="footer__svg" id="layer-10" data-name="layer-10" xmlns="http://www.w3.org/2000/svg"
+         viewBox="0 0 1380 49.44">
+        <defs>
+            <style>.cls-10 {
+                fill: #fff;
+            }</style>
+        </defs>
+        <title>footer</title>
+        <path class="cls-10" d="M-663-193v49.44s618-92,1391,0V-193Z" transform="translate(658 193)"/>
+    </svg>
+    <div class="container">
+        <div class="footer__wrap">
+            <div class="row">
+                <div class="col-4 offset-4 col-md-3 offset-md-0">
+                    <a href="/" class="header__logo">
+                        <img src="img/logo.png">
+                    </a>
+                </div>
+                <div class="col-12 col-md-9">
+                    <nav class="header-menu">
+                        <div class="header-menu__wrap navbar-collapse" id="exCollapsingNavbar-2">
+                            <div class="d-none d-sm-inline-block header-menu__item dropdown">
+                                <a href="#program_child" class="header-menu__link"
+                                   id="dropdownMenuLink-3" data-toggle="dropdown" aria-haspopup="true"
+                                   aria-expanded="false">For children
+                                </a>
+                                <div class="dropdown-menu header-menu__dropdown" aria-labelledby="dropdownMenuLink-3">
+                                    <a class="header-menu__dropdown-link dropdown-item"
+                                       href="#timeline_child">Schedule</a>
+                                    <a class="header-menu__dropdown-link dropdown-item"
+                                       href="#dates_child">Dates of the event</a>
+                                    <a class="header-menu__dropdown-link dropdown-item"
+                                       href="#cost_child">Price</a>
+                                </div>
+                            </div>
+                            <div class="d-none d-sm-inline-block header-menu__item dropdown">
+                                <a href="#program_adult" class="header-menu__link"
+                                   id="dropdownMenuLink-4" data-toggle="dropdown" aria-haspopup="true"
+                                   aria-expanded="false">For adults
+                                </a>
+                                <div class="dropdown-menu header-menu__dropdown" aria-labelledby="dropdownMenuLink-4">
+                                    <a class="header-menu__dropdown-link dropdown-item"
+                                       href="#timeline_adult">Schedule</a>
+                                    <a class="header-menu__dropdown-link dropdown-item"
+                                       href="#dates_adult">Dates of the event</a>
+                                    <a class="header-menu__dropdown-link dropdown-item"
+                                       href="#cost_adult">Price</a>
+                                </div>
+                            </div>
+                            <div class="header-menu__item">
+                                <a href="#coaches" class="header-menu__link">Trainers</a>
+                            </div>
+                            <div class="header-menu__item">
+                                <a href="#reviews" class="header-menu__link">Reviews</a>
+                            </div>
+                            <div class="header-menu__item">
+                                <a href="#contacts" class="header-menu__link">Contacts</a>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div class="footer__wrap">
+            <div class="row">
+                <div class="col-6 col-lg-3">
+                    <div class="footer-info__wrap">
+                        <div class="footer-info__title">Registered address:</div>
+                        <div class="footer-info__desc"> Place CH, Clavadelerstrasse 5, 7270 Davos, Switzerland
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-lg-3">
+                    <div class="footer-info__wrap">
+                        <div class="footer-info__title">Physical address:</div>
+                        <div class="footer-info__desc">Ferienwohnung Piz Bernina 5, Piz San Gian 14 und Piz Mezdi 15, Sankt Moritz, Switzerland
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3">
+                    <div class="footer-info__wrap">
+                        <div class="footer-info__phone">+44 (123) 456-78-90</div>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3">
+                    <div class="footer-info__wrap float-md-right">
+                        <div class="footer-info__soc-wrap">
+                            <a class="footer-info__soc-link" href="/"></a>
+                        </div>
+                        <div class="footer-info__soc-wrap">
+                            <a class="footer-info__soc-link" href="/"></a>
+                        </div>
+                        <div class="footer-info__soc-wrap">
+                            <a class="footer-info__soc-link" href="/"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__wrap">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="footer-info__wrap">
+                        <div class="footer-info__copyright">
+                            © 2016-2018 «Tirol Club». All rights reserved.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6"></div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/slick.min.js" type="application/javascript"></script>
+<script src="js/bootstrap.min.js" type="application/javascript"></script>
+<script src="js/jquery.custom-select.min.js"></script>
+<script src="js/jquery.mCustomScrollbar.concat.min.js" type="application/javascript"></script>
+<script src="js/jquery.fancybox.min.js"></script>
+<script src="js/script.js" type="application/javascript"></script>

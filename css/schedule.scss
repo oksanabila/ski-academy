@@ -1,0 +1,265 @@
+.schedule {
+  &__wrap {
+    overflow: hidden;
+  }
+}
+
+.schedule-timeline {
+  $parent: &;
+  list-style: none;
+  position: relative;
+  display: inline;
+  padding: 0;
+  &__line {
+    @include clearfix();
+    position: relative;
+    padding: px-to-rem(50px) 0;
+    &:first-child {
+      padding-top: 0;
+    }
+    &:last-child {
+      #{$parent}__badge {
+        &:before {
+          background-color: white;
+          width: px-to-rem(4px);
+          left: 50%;
+        }
+      }
+    }
+  }
+  &__badge {
+    width: px-to-rem(30px);
+    height: px-to-rem(30px);
+    position: relative;
+    top: px-to-rem(52px);
+    left: 51%;
+    margin-left: px-to-rem(-25px);
+    border-radius: 50%;
+    background-color: white;
+    border: 2px solid $blue;
+    &:before {
+      @include pseudo();
+      top: px-to-rem(28px);
+      width: px-to-rem(2px);
+      height: px-to-rem(210px);
+      background-color: $blue;
+      left: 52%;
+      margin-left: px-to-rem(-1.5px);
+    }
+  }
+  &__panel {
+    width: 46%;
+    padding: px-to-rem(20px) 0;
+    position: relative;
+    &_time {
+      float: left;
+      padding-right: px-to-rem(20px);
+      #{$parent}__heading {
+        text-align: right;
+      }
+      #{$parent}__title {
+        font-weight: 700;
+        font-size: font-to-rem(30px);
+        line-height: px-to-rem(30px);
+        color: $gray;
+      }
+    }
+    &_desc {
+      float: right;
+      padding-left: px-to-rem(20px);
+      #{$parent}__title {
+        line-height: px-to-rem(30px);
+      }
+    }
+  }
+  &__heading {
+    font-family: 'Montserrat';
+  }
+  &__wrap {
+    &_workout {
+      #{$parent}__badge {
+        &:after {
+          @include pseudo();
+          top: px-to-rem(4px);
+          right: px-to-rem(4px);
+          width: px-to-rem(18px);
+          height: px-to-rem(18px);
+          border-radius: 50%;
+          background-color: #08a7f8;
+        }
+      }
+      #{$parent}__panel_desc {
+        #{$parent}__title {
+          color: $blue;
+        }
+      }
+    }
+  }
+}
+
+.schedule-dates-item {
+  $parent: &;
+  font-family: 'Montserrat';
+  @include border-radius();
+  @include border();
+  display: block;
+  padding: px-to-rem(60px) px-to-rem(50px);
+  margin-bottom: px-to-rem(50px);
+  text-align: center;
+  background-color: white;
+  &__title {
+    font-size: font-to-rem(24px);
+    line-height: 1.3;
+    font-weight: 700;
+    color: $red;
+    margin-bottom: px-to-rem(35px);
+  }
+
+  &__month-wrap {
+    position: relative;
+    margin-bottom: px-to-rem(20px);
+    z-index: 0;
+    &:after {
+      @include pseudo();
+      top: 0;
+      border-bottom: 1px solid $gray;
+      height: 49%;
+      width: 100%;
+      z-index: -1;
+    }
+  }
+  &__month {
+    display: inline-block;
+    font-size: font-to-rem(21px);
+    line-height: 1.3;
+    font-weight: 600;
+    color: $gray;
+    background-color: white;
+    padding: 0 px-to-rem(20px);
+    z-index: 0;
+  }
+  &__dates-wrap {
+    margin-bottom: px-to-rem(30px);
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  &__dates {
+    margin-bottom: px-to-rem(10px);
+  }
+  &:nth-child(odd) {
+    margin-left: px-to-rem(65px);
+    margin-right: px-to-rem(30px);
+  }
+  &:nth-child(even) {
+    margin-left: px-to-rem(30px);
+    margin-right: px-to-rem(65px);
+  }
+}
+
+@include media-breakpoint-down(lg) {
+  .schedule {
+    &__wrap {
+      margin-bottom: px-to-rem(55px);
+    }
+  }
+  .schedule-dates-item {
+    &:nth-child(odd),
+    &:nth-child(even) {
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+}
+
+@include media-breakpoint-down(md) {
+  .schedule-timeline {
+    $parent: &;
+    &__line {
+      padding: px-to-rem(14px) 0;
+    }
+    &__badge {
+      &:before {
+        height: px-to-rem(130px);
+      }
+    }
+    &__panel {
+      &_time {
+        #{$parent}__title {
+          font-size: font-to-rem(24px);
+          line-height: px-to-rem(24px);
+        }
+      }
+    }
+    &__title {
+      font-size: font-to-rem(21px);
+      line-height: px-to-rem(24px);
+    }
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .schedule-timeline {
+    $parent: &;
+    &__panel {
+      &_time {
+        font-size: font-to-rem(21px);
+      }
+      &_desc {
+        #{$parent}__title {
+          line-height: px-to-rem(24px);
+        }
+      }
+    }
+    &__title {
+      font-size: font-to-rem(18px);
+    }
+  }
+}
+
+@include media-breakpoint-down(xs) {
+  .schedule-timeline {
+    $parent: &;
+    &__badge {
+      width: px-to-rem(20px);
+      height: px-to-rem(20px);
+      top: px-to-rem(30px);
+      &:before {
+        top: px-to-rem(18px);
+        height: px-to-rem(195px);
+      }
+    }
+    &__panel {
+      padding: px-to-rem(10px);
+      &_time {
+        #{$parent}__title {
+          font-size: font-to-rem(15px);
+          line-height: 1;
+          padding-right: px-to-rem(15px);
+        }
+      }
+      &_desc {
+        width: 50%;
+        #{$parent}__title {
+          line-height: 1.3;
+        }
+      }
+    }
+    &__wrap {
+      &_workout {
+        #{$parent}__badge {
+          &:after {
+            top: px-to-rem(2px);
+            right: px-to-rem(2px);
+            width: px-to-rem(12px);
+            height: px-to-rem(12px);
+          }
+        }
+      }
+    }
+    &__title {
+      font-size: font-to-rem(14px);
+      line-height: 1;
+    }
+  }
+}

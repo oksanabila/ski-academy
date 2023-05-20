@@ -1,0 +1,15 @@
+{
+  "requires": true,
+  "lockfileVersion": 1,
+  "dependencies": {
+    "@fancyapps/fancybox": "^3.5.2",
+    "bootstrap": "4.0.0",
+    "bootstrap-slider": "^10.0.2",
+    "bxslider": "^4.2.13",
+    "custom-select": "^1.1.15",
+    "malihu-custom-scrollbar-plugin": "^3.1.5",
+    "popper.js": "^1.14.5",
+    "slick-carousel": "^1.8.1"
+  },
+  "devDependencies": {}
+}
