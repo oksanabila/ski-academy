@@ -4,10 +4,10 @@
  * Copyright 2011-2018 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
-@import url(../node_modules/slick-carousel/slick/slick-theme.css);
-@import url(../node_modules/custom-select/build/custom-select.css);
-@import url(../node_modules/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css);
-@import url(../node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.css);
+@import url(../library_root/slick-carousel/slick/slick-theme.css);
+@import url(../library_root/custom-select/build/custom-select.css);
+@import url(../library_root/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css);
+@import url(../library_root/@fancyapps/fancybox/dist/jquery.fancybox.min.css);
 :root {
   --blue: #007bff;
   --indigo: #6610f2;

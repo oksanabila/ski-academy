@@ -1,9 +1,9 @@
-@import "../node_modules/bootstrap/scss/bootstrap";
-@import "../node_modules/slick-carousel/slick/slick-theme.css";
-@import "../node_modules/slick-carousel/slick/slick";
-@import "../node_modules/custom-select/build/custom-select.css";
-@import "../node_modules/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css";
-@import "../node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.css";
+@import "../library_root/bootstrap/scss/bootstrap";
+@import "../library_root/slick-carousel/slick/slick-theme.css";
+@import "../library_root/slick-carousel/slick/slick";
+@import "../library_root/custom-select/build/custom-select.css";
+@import "../library_root/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css";
+@import "../library_root/@fancyapps/fancybox/dist/jquery.fancybox.min.css";
 
 @import "variables";
 @import "mixins";
